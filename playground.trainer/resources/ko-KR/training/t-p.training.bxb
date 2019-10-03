@@ -1,0 +1,5 @@
+train (t-p8f4in64fpvxi9jmzg3hq3dam) {
+  utterance ([g:userInfoForm] 내 정보 입력할게)
+  plan (Y2BjUCnISaxML8ovzUvRKylKzMxLLdIrLU4t8sxLyw8uKSpNLiktSmWQx6PKLb8ol0EWi4L0/MSc8NTM9IwSBkks0hm4pTLzkvJTKrFKlUN0sTIwMjAxMDOwAFkMQDYMIgCYBwA=)
+  last-modified (1569951082178)
+}

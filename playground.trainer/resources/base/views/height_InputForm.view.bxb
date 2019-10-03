@@ -1,0 +1,27 @@
+input-view{
+  match {
+    height (Height){
+      to-input: userInfoForm
+    }
+  }
+  message{
+    template("키를 입력해주세요")
+  }
+  render{
+    form{
+      elements{
+        number-input{
+          id (Height)
+          label (height)
+          type (height)
+          suffix (cm)
+          value("#{raw(Height)}")
+        }
+      }
+      on-submit{
+        goal : height
+        value : viv.core.FormElement(Height)
+      }
+    }
+  }
+}

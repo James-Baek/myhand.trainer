@@ -1,0 +1,27 @@
+input-view{
+  match {
+    weight(Weight){
+      to-input: userInfoForm
+    }
+  }
+  message{
+    template("몸무게를 입력해주세요")
+  }
+  render{
+    form{
+      elements{
+        number-input{
+          id (Weight)
+          label (weight)
+          type (weight)
+          suffix (kg)
+          value ("#{raw(Weight)}")
+        }
+      }
+      on-submit{
+        goal : weight
+        value : viv.core.FormElement(Weight)
+      }
+    }
+  }
+}

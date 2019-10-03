@@ -1,12 +1,15 @@
-module.exports.function = function example (example) { // action의 input = js의 parameter
+module.exports.function = function example (example_name) { // action의 input = js의 parameter
+
+
   var ex1 = []; // = java static
   const ex2 = []; // = java final
   let ex3 = []; // = local variable
 
-  // https://bixbydevelopers.com/dev/docs/reference/JavaScriptAPI 참고
+  // 함수는 https://bixbydevelopers.com/dev/docs/reference/JavaScriptAPI 참고
   // const config = require('config');
   // const http = require('http');
   // const fail = require('fail');
+    const console = require('console');
 
-  return example; // action outpt = js return
+  return example_name; // action outpt = js return
 }

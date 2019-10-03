@@ -1,0 +1,23 @@
+action (userInfoForm) {
+  type(Calculation)
+  description ("user 정보 입력을 도와줌")
+  collect {
+    input (Height) {
+      type (height)
+      min (Required) max (One)
+    }
+    input (Weight){
+      type (weight)
+      min (Required) max (One)
+    }
+      input (Inbody){
+      type (inbody)
+      min (Required) max (One)
+    }
+      input (GoalWeight){
+      type (goalWeight)
+      min (Required) max (One)
+    }
+  }
+  output (userInfoStructure)
+}
